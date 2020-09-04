@@ -16,10 +16,13 @@ print("Welcome to Mr. Sakomoto's store {}".format(date))
 print("Items")
 print("=" * 20)
 
-print("1. RAM")
-print("2. CPU")
-print("3. Motherboard")
-print("4. GPU")
+Items = list(["1. RAM","2. CPU","3. Motherboard","4. GPU"])
+CostOfItems =list(["5btc"])
+print("{} {}".format(Items[1]),CostOfItems[1])
+print("1. RAM             5btc")
+print("2. CPU             5btc")
+print("3. Motherboard     5btc")
+print("4. GPU             5btc")
 print("")
 
 SelectingItems = int(input("Select Item 1-4:  "))
@@ -39,4 +42,6 @@ if SelectingItems > 4 :
   print("The item with this number doesn't exsist")
 if SelectingItems <= 0 :
   print("The item with this number doesn't exsist")
+
+
 ```
