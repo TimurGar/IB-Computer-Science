@@ -16,32 +16,33 @@ print("Welcome to Mr. Sakomoto's store {}".format(date))
 print("Items")
 print("=" * 20)
 
-Items = list(["1. RAM","2. CPU","3. Motherboard","4. GPU"])
-CostOfItems =list(["5btc"])
-print("{} {}".format(Items[1]),CostOfItems[1])
-print("1. RAM             5btc")
-print("2. CPU             5btc")
-print("3. Motherboard     5btc")
-print("4. GPU             5btc")
+
+
+deaposoneOfAllItems = list()
+Items = list(["1. RAM","2. CPU","3. Motherboard","4. GPU","5. test"])
+CostOfItems =list(["1btc","5tc","10btc","2btc","test"])
+NumberOfItems = len(Items)
+
+for i in range(1,NumberOfItems +1 ,1):
+  deaposoneOfAllItems.append(i)
+  i += i
+
+for i in range(NumberOfItems):
+  print("{} {}".format(Items[i],CostOfItems[i]))
+
 print("")
 
-SelectingItems = int(input("Select Item 1-4:  "))
+while(1):
+  SelectingItems = int(input("Select Item 1-4:  "))
 
+  for n in range(NumberOfItems):
+    if SelectingItems == deaposoneOfAllItems[n]:
+      print(Items[n])
+      
 
-
-if SelectingItems == 1 :
-  print("1. RAM")
-if SelectingItems == 2 :
-  print("2. CPU") 
-if SelectingItems == 3 :
-  print("3. Motherboard")
-if SelectingItems == 4 :
-  print("4. GPU")
-
-if SelectingItems > 4 :
-  print("The item with this number doesn't exsist")
-if SelectingItems <= 0 :
-  print("The item with this number doesn't exsist")
-
+  if SelectingItems > NumberOfItems :
+    print("The item with this number doesn't exsist")
+  if SelectingItems <= NumberOfItems :
+    print("The item with this number doesn't exsist")
 
 ```
