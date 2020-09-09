@@ -7,6 +7,10 @@ There is a hardware store in Karuizawa. This store is quite old, Like 1000 years
 ### Justification of the solution
 **Here we will write the design statement: what we will do, how, by when**
 
+## Criteria C: Development
+
+### This is my code to for the Hardware store
+
 ```.py
 from datetime import datetime
 
