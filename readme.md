@@ -1,6 +1,5 @@
 # Unit 1: A electronic hardware store
 
-![]()
 ## Criteria A: Planing
 
 ### Context of the problem
@@ -11,6 +10,8 @@ There is a hardware store in Karuizawa. This store is quite old, Like 1000 years
 ## Criteria B: Design
 
 ### System diagram
+![Photo](Images/Hardware%20Store%20Design.png)
+
 
 
 ## Criteria C: Development
