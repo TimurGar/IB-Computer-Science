@@ -12,7 +12,7 @@ There is a hardware store in Karuizawa. This store is quite old, Like 1000 years
 ### System diagram
 ![Photo](Images/Hardware%20Store%20Design.png)
 
-![Flowchart](Images/Hardware%20store%20flowchart.png | width=600)
+<img src="Images/Hardware%20store%20flowchart.png" alt = "FlowChart" width="600">
 
 ## Criteria C: Development
 
