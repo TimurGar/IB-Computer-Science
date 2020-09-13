@@ -6,6 +6,22 @@
 There is a hardware store in Karuizawa. This store is quite old, Like 1000 years old. The owner, Mr. Sakamoto, wants to upgrade his accounting system. On the moment is kept on paper. He would like to have a software 
 ### Justification of the solution
 **Here we will write the design statement: what we will do, how, by when**
+We want to ctreate a text based application that runs on a computer,which provides the functionality for the hardware store. The app should provide actiona such as record of purchases, categorization of items, record of inventory, calculation of totals, biling. We will develop this application using Python. We will use Python because it is the software we are using in class at the moment. In comparison to C++ or C, Pytho has a lean and simple programming syntax. In addition, Python become the most popular programming language over the last years[1]. Similarly Python has a large repository of libraries and documendation.
+
+T.E.L.O.S study:
+T - technical
+E - economic
+L - 
+O -
+S -
+[1] MLA citation for the data supporting that Python is the most popular programming language.
+
+## Criteria for Success
+1. Provides clear feedback to the user(Usability)
+1. **There are no bugs in the application
+1. The application should allow to calculate the total and billing
+1. Secure application: It allows user login/autenthication
+
 
 ## Criteria B: Design
 
@@ -13,6 +29,8 @@ There is a hardware store in Karuizawa. This store is quite old, Like 1000 years
 ![Photo](Images/Hardware%20Store%20Design.png)
 
 <img src="Images/Hardware%20store%20flowchart.png" alt = "FlowChart" width="600">
+
+
 
 ## Criteria C: Development
 
