@@ -2,14 +2,7 @@
 import random, math
 import matplotlib.pyplot as plt
 
-
-
-
-MSE = [0,0,0,0,0,0,0,0,0,0,0]
 counts = [0,0,0,0,0,0]
-averageError = [0,0,0,0,0,0,0,0,0,0,0]
-FractionalAverageError = [0,0,0,0,0,0,0,0,0,0,0]
-FractionalError = [0,0,0,0,0,0,0,0,0,0,0]
 numTrial = [1000,2000,3000,4000,5000,6000,7000,8000,9000,10000,11000]
 normalized_error = []
 face_one = []
@@ -37,15 +30,7 @@ for trail in range(1, 10000):
 
     normalized_error.append(error/trail)
 
-    # FractionalError[y] = int((counts[0] - numTrial[y]) / numTrial[y] * 100 + (counts[1] - numTrial[y]) / numTrial[y] * 100 + (counts[2] - numTrial[y]) / numTrial[y] * 100 + (counts[3] - numTrial[y]) / numTrial[y] * 100 + (counts[4] - numTrial[y]) / numTrial[y] * 100 + (counts[5] - numTrial[y]) / numTrial[y] * 100)
-
-    # FractionalAverageError[y] = averageError[y] / numTrial[y]
-    # MSE[y] = 1/6 * math.sqrt((counts[0] - numTrial[y] / 6)**2  + (counts[1] - numTrial[y] / 6)**2  + (counts[2] - numTrial[y] / 6)**2  + (counts[3] - numTrial[y] / 6)**2  + (counts[4] - numTrial[y] / 6)**2  + (counts[5] - numTrial[y] / 6)**2)
-
 print(normalized_error)
-# print(FractionalError)
-
-
 
 plt. xlabel("Number of trials")
 plt. ylabel("Absolute error")
