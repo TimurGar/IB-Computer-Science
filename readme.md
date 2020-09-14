@@ -9,12 +9,13 @@ There is a hardware store in Karuizawa. This store is quite old, Like 1000 years
 We want to ctreate a text based application that runs on a computer,which provides the functionality for the hardware store. The app should provide actiona such as record of purchases, categorization of items, record of inventory, calculation of totals, biling. We will develop this application using Python. We will use Python because it is the software we are using in class at the moment. In comparison to C++ or C, Pytho has a lean and simple programming syntax. In addition, Python become the most popular programming language over the last years[1]. Similarly Python has a large repository of libraries and documendation.
 
 T.E.L.O.S study:
-T - technical
-E - economic
-L - 
-O -
-S -
-[1] MLA citation for the data supporting that Python is the most popular programming language.
+* T - Technical
+* E - Economic
+* L - Legal
+* O - Operational
+* S - Scheduling 
+
+[1] Goal, Aman. “Best Programming Language to Learn in 2020 (for Job &amp; Future).” Hackr.io, hackr.io/blog/best-programming-languages-to-learn-2020-jobs-future. 
 
 ## Criteria for Success
 1. Provides clear feedback to the user(Usability)
