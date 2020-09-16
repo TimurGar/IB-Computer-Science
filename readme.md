@@ -90,3 +90,26 @@ while 1:
         if x == 1:
             print("This item",SelectingItems,"does not exist")
 ```
+### System diagram of the computer:
+<img src="Images/Fig1%20Computer%20components.jpg" alt = "System Diagram">
+
+In the image above you can see a general architecture of the computer which includes:
+1. Dual core CPU
+1. Video card RTX 3080(connected to PCI express port)
+1. RAM (4 DDR4 DIMMS slots, 16Gb each) 
+1. Chipset
+1. BIOS
+1. CMOS with a backup battery(next to BIOS)
+1. connectors for peripherals
+
+which are located on the motherboard or directly connected to it(without wires, placed directly to a sertain slot on the motherboard)
+
+And 
+1. SSD 128GB(connected to SATA port)
+1. HDD 1Tb(connected to SATA port)
+1. Power supply 1000w(it's also connected to external power socket. 
+
+Which are connected to a motherboards via wires.
+We also have keyboard and mouse as an input and monitor as an output.
+
+
