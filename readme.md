@@ -107,7 +107,8 @@ which are located on the motherboard or directly connected to it(without wires, 
 And 
 1. SSD 128GB(connected to SATA port)
 1. HDD 1Tb(connected to SATA port)
-1. Power supply 1000w(it's also connected to external power socket. 
+1. Power supply 1000w(it's also connected to external power socket). 
+1. Cooling fans(located on computer case)
 
 Which are connected to a motherboards via wires.
 We also have keyboard and mouse as an input and monitor as an output.
