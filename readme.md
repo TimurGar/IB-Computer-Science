@@ -31,7 +31,12 @@ T.E.L.O.S study:
 
 <img src="Images/Hardware%20store%20flowchart.png" alt = "FlowChart" width="600">
 
-
+### Record of tasks
+| Task No | Action | Planned Outcome | Time Estimated | Target Completion date | Criterion |
+|-|-|-|-|-|-|
+| 1 | Planning: Discuss the context of the situation(1st interview with the client) | Write the context of the problem | 15 min | Sep 11th | A |
+| 2 | Developing: Coded the text-based menu system parts in the hardware store | A working program that show menu | 80 min | Sep 18th | C |
+| 3 | Design: Created the system diagram and the flow chart of the program | A completed diagram and the flow-chart explaining the process of how the program works | 60 min | Sep 15th | B |
 
 ## Criteria C: Development
 
@@ -113,4 +118,6 @@ And
 Which are connected to a motherboards via wires.
 We also have keyboard and mouse as an input and monitor as an output.
 
+## Criteria D: Functionality
 
+## Criteria E: Evaluation
