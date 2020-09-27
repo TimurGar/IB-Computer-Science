@@ -97,8 +97,23 @@ while 1:
                         print("Invalid input")
                 break
         if x == 1:
-            print("This item",SelectingItems,"does not exist")
+            print("This item",SelectingItems,"does not exist")      
 ```
+### Code for the database encryption program
+```.py
+all_lines_of_database = open("Database.txt","r").readlines()
+
+encrypt_line = ""
+shift = int(input("Provide shift "))
+for line in all_lines_of_database:
+    len_line = len(line)
+    for L in range(len_line):
+        print("line {} out of {}".format(L, len_line,),"." * 20, "completion {:.2f} %".format( ((L + 1)/len_line) * 100))
+        new_L = chr(ord(line[L]) + shift)
+        encrypt_line += new_L
+print(encrypt_line)
+```
+
 ### System diagram of the computer:
 <img src="Images/Fig1%20Computer%20components.jpg" alt = "System Diagram">
 
