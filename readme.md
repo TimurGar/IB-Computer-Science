@@ -32,6 +32,12 @@ T.E.L.O.S study:
 <img src="Images/Hardware%20store%20flowchart.png" alt = "FlowChart" width="600">
 
 ### Database encryption system
+My program reads data from a separate file(Database.txt) and encrypts all the data using Caesar cipher.
+Because of that we can prevent styling information if someone would be able to get access to a database as the data will be encrypted.
+The flow diagram below describes the algorithm of the encryption system.
+You can find code for this algorithm in the Criteria C section.
+
+
 <img src="Images/Database%20encryptor.png" alt = "Database encryption system" width="400">
 
 
