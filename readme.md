@@ -31,6 +31,10 @@ T.E.L.O.S study:
 
 <img src="Images/Hardware%20store%20flowchart.png" alt = "FlowChart" width="600">
 
+### Database encryption system
+<img src="Images/Database%20encryptor.png" alt = "Database encryption system" width="400">
+
+
 ### Record of tasks
 | Task No | Action | Planned Outcome | Time Estimated | Target Completion date | Criterion |
 |-|-|-|-|-|-|
