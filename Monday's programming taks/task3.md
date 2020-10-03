@@ -84,3 +84,5 @@ for i in range(n + 1):
     fibonacci2 = fibonacci_new
     
 ```
+## HL Task
+https://docs.google.com/presentation/d/1hFZTjcVKLE-vCfi2h3vho9AHHjsOIk336DmWlANh3ZM/edit#slide=id.g9df4d2054d_0_25
