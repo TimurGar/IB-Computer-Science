@@ -67,3 +67,20 @@ https://en.wikipedia.org/wiki/Linux
 * Manjaro - mainly used for home applications, it's very user friendly so it's suitable for newcomers. Minimum system requirements: 1 GB RAM, 30 GB of disk space, 1 GHz Processor.
 
 * Kali - usually used for penetration testing and digital forensics.  1 GB RAM, 20 GB of disk space.
+
+## Programming task
+```.py
+# This program prints n amount of Fibonacci series
+
+n = int(input("Enter to amount of numbers you want to print "))
+fibonacci_new = 0
+fibonacci1 = 0
+fibonacci2 = 1
+
+for i in range(n + 1):
+    print(fibonacci1)
+    fibonacci_new = fibonacci1 + fibonacci2
+    fibonacci1 = fibonacci2
+    fibonacci2 = fibonacci_new
+    
+```
