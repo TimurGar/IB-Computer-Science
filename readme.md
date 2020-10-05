@@ -29,7 +29,7 @@ T.E.L.O.S study:
 ### System diagram
 ![Photo](Images/Hardware%20Store%20Design.png)
 
-<img src="Images/Hardware%20store%20flowchart.png" alt = "FlowChart" width="600">
+<img src="Images/Hardware%20store%20flowchart2.png" alt = "FlowChart" width="600">
 
 ### Database encryption system
 My program reads data from a separate file(Database.txt) and encrypts all the data using Caesar cipher.
