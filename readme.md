@@ -118,7 +118,7 @@ while FoolProofCheck == 1:
 
             # Printing selected item and its cost
             print("")
-            print("{} cost = {} bitcoins".format(Items[i], CostOfItems[i]))
+            print("{}, cost = {} bitcoins".format(Items[i], CostOfItems[i]))
             FoolProofCheck += 1
 
             print("=" * 20)
@@ -126,7 +126,7 @@ while FoolProofCheck == 1:
             while FoolProofCheck2 == 1:
 
                 # Asking to enter the amount of selected item the user wants to purchase
-                AmountOfItem = input("How many do you want:  ")
+                AmountOfItem = input("How many do items do you want:  ")
                 for n in range(100000):
                     if AmountOfItem == str(n):
                         print("")
@@ -137,7 +137,7 @@ while FoolProofCheck == 1:
             # This is the message the user is going to get if he/she types a letter
             # instead of the number items.
             if FoolProofCheck2 == 1:
-                print("Invalid input")
+                print("Invalid input. Enter a number not a letter")
             break
     # This is the message the user is going to get if he/she types a letter
     # or a number of item that it not included in the list.
@@ -145,7 +145,7 @@ while FoolProofCheck == 1:
         print("")
         print("Item", SelectingItems,"does not exist")
         print("Enter a number within the given range")
-        print("")   
+        print("")
 ```
 ### Code for the database encryption program
 ```.py
