@@ -3,10 +3,10 @@
 ## Criteria A: Planing
 
 ### Context of the problem
-There is a hardware store in Karuizawa. This store is quite old, Like 1000 years old. The owner, Mr. Sakamoto, wants to upgrade his accounting system. On the moment is kept on paper. He would like to have a software 
+There is a hardware store in Karuizawa. This store is quite old, Like 1000 years old. The owner, Mr. Sakamoto, wants to upgrade his accounting system. On the moment is kept on paper. He would like to have a software application to replace his accounting book. Mr Sakamoto just got a new macbook.
 ### Justification of the solution
 **Here we will write the design statement: what we will do, how, by when**
-We want to ctreate a text based application that runs on a computer,which provides the functionality for the hardware store. The app should provide actiona such as record of purchases, categorization of items, record of inventory, calculation of totals, biling. We will develop this application using Python. We will use Python because it is the software we are using in class at the moment. In comparison to C++ or C, Pytho has a lean and simple programming syntax. In addition, Python become the most popular programming language over the last years[1]. Similarly Python has a large repository of libraries and documendation.
+We want to create a text based application that runs on a computer,which provides the functionality for the hardware store. The app should provide actions such as record of purchases, categorization of items, record of inventory, calculation of totals, biling. We will develop this application using Python. We will use Python because it is the software we are using in class at the moment. In comparison to C++ or C, Python has a lean and simple programming syntax. In addition, Python become the most popular programming language over the last years[1]. Similarly Python has a large repository of libraries and documendation.
 
 T.E.L.O.S study:
 * T - Technical
@@ -19,12 +19,16 @@ T.E.L.O.S study:
 
 ## Criteria for Success
 1. Provides clear feedback to the user(Usability)
-1. **There are no bugs in the application
+1. There are no bugs in the application
 1. The application should allow to calculate the total and billing
 1. Secure application: It allows user login/autenthication
 
 
 ## Criteria B: Design
+
+# My criiteria for success is optimase the hardware program so that it is going to provide clear feedback to the user(Usability).
+To test my program you need to follow these steps.
+
 
 ### System diagram
 ![Photo](Images/Hardware%20Store%20Design.png)
@@ -53,57 +57,88 @@ You can find code for this algorithm in the Criteria C section.
 ### This is my code to for the Hardware store
 
 ```.py
+# This is my version of the electronic hardware story for Mr. Sakomoto
+
+# Inputs:
+# The number of the item from the list
+# The amount of an item a user wants to purchase
+
+# Outputs:
+# Calculated total cost of items
+
+# Real time library import
 from datetime import datetime
 
+#  Printing the header of the code
 date = datetime.today()
+print("")
 print("Welcome to Mr. Sakomoto's store {}".format(date))
 print("")
 print("Items")
 print("=" * 21)
 
-deaposoneOfAllItems = []
+# Creating lists with items, their cost
+# Creating other useful varibales(NumberOfItems = number of items, RangeOfAllItems = range of items)
+RangeOfAllItems = []
 Items = ["1. RAM", "2. CPU", "3. Motherboard", "4. GPU", "5. test"]
 CostOfItems = ["1", "5", "10", "2", "5"]
 NumberOfItems = len(Items)
+# If you decide to add a new item, simply type the name and the cost of
+# the item into the Items and CostOfItems lists
+# Program will do everything else for you!
 
-
+# Calculating the range of items
 for i in range(1, NumberOfItems + 1, 1):
-    deaposoneOfAllItems.append(i)
+    RangeOfAllItems.append(i)
     i += i
 
+# Printing the names and the costs of all the items
 for i in range(NumberOfItems):
     print('{} {} '.format(Items[i],CostOfItems[i].rjust(20 - len(Items[i]))))
 
 
 
-while 1:
-    x = 1
-    while x == 1:
-        SelectingItems = input("Select Item 1-4:  ")
-        for i in range(NumberOfItems):
-            if SelectingItems == str(deaposoneOfAllItems[i]):
-                print("")
-                print("{}  {} {}".format(Items[i], CostOfItems[i], "btc"))
-                x += 1
+# I created the varible FoolProofCheck to make sure that if
+# the user will type a wrong number or a letter instead of correct value,
+# the program not going to give an error.
+FoolProofCheck = 1
+while FoolProofCheck == 1:
 
-                print("=" * 20)
-                y = 1
-                while y == 1:
-                    AmountOfItem = input("How many do you want:  ")
-                    for n in range(100000):
-                        if AmountOfItem == str(n):
-                            print("")
-                            print("Your total cost will be: ", int(CostOfItems[i]) * int(AmountOfItem), "btc")
-                            print("")
-                            y += 1
-                            break
-                    input("To exit, enter your credit card number: ")
+    # Asking to enter an item from the available ones that user wants to purchase
+    SelectingItems = input("Select Item 1 - {}: ".format(NumberOfItems))
+    for i in range(NumberOfItems):
+        if SelectingItems == str(RangeOfAllItems[i]):
 
-                    if y == 1:
-                        print("Invalid input")
-                break
-        if x == 1:
-            print("This item",SelectingItems,"does not exist")      
+            # Printing selected item and its cost
+            print("")
+            print("{} cost = {} bitcoins".format(Items[i], CostOfItems[i]))
+            FoolProofCheck += 1
+
+            print("=" * 20)
+            FoolProofCheck2 = 1
+            while FoolProofCheck2 == 1:
+
+                # Asking to enter the amount of selected item the user wants to purchase
+                AmountOfItem = input("How many do you want:  ")
+                for n in range(100000):
+                    if AmountOfItem == str(n):
+                        print("")
+                        print("You selected item: {}. Your total cost will be {} * {} = {} bitcoins".format(Items[i],int(CostOfItems[i]), int(AmountOfItem), int(CostOfItems[i]) * int(AmountOfItem)))
+                        FoolProofCheck2 += 1
+                        break
+
+            # This is the message the user is going to get if he/she types a letter
+            # instead of the number items.
+            if FoolProofCheck2 == 1:
+                print("Invalid input")
+            break
+    # This is the message the user is going to get if he/she types a letter
+    # or a number of item that it not included in the list.
+    if FoolProofCheck == 1:
+        print("")
+        print("Item", SelectingItems,"does not exist")
+        print("Enter a number within the given range")
+        print("")   
 ```
 ### Code for the database encryption program
 ```.py
